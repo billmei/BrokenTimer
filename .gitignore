@@ -1,6 +1,7 @@
 *.class
 
 # Package Files #
-*.jar
 *.war
 *.ear
+
+# .jar not included in .gitignore for distribution. #
