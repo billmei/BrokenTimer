@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class DesktopTimer extends JFrame {
+public class BrokenTimer extends JFrame {
     private static final int WIDTH = 200;
     private static final int HEIGHT = 25;
     private MainPanel mainPanel = new MainPanel();
@@ -12,7 +12,7 @@ public class DesktopTimer extends JFrame {
     private long startTime = System.currentTimeMillis();
     private boolean alreadyAlerted = false; // changed to true once the timer beeps, so the alert pane only shows the first time.
 
-    public DesktopTimer () {
+    public BrokenTimer () {
         int numberOfHours = Integer.parseInt(JOptionPane.showInputDialog(null, "Input the number of hours:"));
         int numberOfMinutes = Integer.parseInt(JOptionPane.showInputDialog(null, "Input the number of minutes:"));
         int numberOfSeconds = (numberOfMinutes * 60) + (numberOfHours * 3600);
@@ -65,6 +65,6 @@ public class DesktopTimer extends JFrame {
     }
 
     public static void main(String[] args) {
-        new DesktopTimer();
+        new BrokenTimer();
     }
 }
