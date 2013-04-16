@@ -7,7 +7,7 @@ public class BrokenTimer extends JFrame {
     private static final int WIDTH = 200;
     private static final int HEIGHT = 25;
     private MainPanel mainPanel = new MainPanel();
-    private Timer globalTimer = new Timer(1000, new TimerListener()); // updates every second
+    private Timer globalTimer = new Timer(1000, new TimerListener()); // 1000 milliseconds = updates every second
     private JProgressBar theBar = new JProgressBar(0, 1); // maximum value is overridden later
     private long startTime = System.currentTimeMillis();
     private boolean alreadyAlerted = false; // changed to true once the timer beeps, so the alert pane only shows the first time.
